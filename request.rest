@@ -1,6 +1,26 @@
 GET  http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE3NTA3NzQwNzgsImV4cCI6MTc1MDc3NDA5OH0.JlJrUH4reevfaKaLipJdKX7uZGSpphETfbCl5bHYEdQ
 
 ###
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE3NTA3NzQwMDB9.kxaihK0NoM9YgPheHmdQiuOK2BkiR0t4QRJdPy_l-dk"
+  
+}
+
+###
+
+POST http://localhost:3000/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE3NTA3NzQwMDB9.kxaihK0NoM9YgPheHmdQiuOK2BkiR0t4QRJdPy_l-dk"
+}
+
+### 
 
 POST http://localhost:3000/users
 Content-Type: application/json
@@ -16,5 +36,5 @@ Content-Type: application/json
 
 {
   "name": "John Doe",
-  "password": "123s"
+  "password": "123"
 }
